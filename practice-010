@@ -1,0 +1,240 @@
+package M2;
+
+public class Problem1 extends BaseClass {
+    private static int[] array1 = {0,1,2,3,4,5,6,7,8,9};   
+    private static int[] array2 = {9,8,7,6,5,4,3,2,1,0};
+    private static int[] array3 = {0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9};
+    private static int[] array4 = {9,9,8,8,7,7,6,6,5,5,4,4,3,3,2,2,1,1,0,0}; 
+    private static void printOdds(int[] arr, int arrayNumber){
+        // Only make edits between the designated "Start" and "End" comments
+        printArrayInfo(arr, arrayNumber);
+
+        // Challenge: Print odd values only in a single line separated by commas
+        // Step 1: sketch out plan using comments (include ucid and date)
+        // Step 2: Add/commit your outline of comments (required for full credit)
+        // Step 3: Add code to solve the problem (add/commit as needed)
+        System.out.print("Output Array: ");
+        // Start Solution Edits
+        
+
+        // End Solution Edits
+        System.out.println("");
+        System.out.println("______________________________________");
+    }
+    public static void main(String[] args) {
+        final String ucid = "mt85"; // <-- change to your UCID
+        // no edits below this line
+        printHeader(ucid, 1);
+        printOdds(array1,1);
+        printOdds(array2,2);
+        printOdds(array3,3);
+        printOdds(array4,4);
+        printFooter(ucid, 1);
+        
+    }
+}
+
+package M2;
+
+public class Problem2 extends BaseClass {
+    private static double[] array1 = { 0.1, 0.2, 0.3, 0.4, 0.5, 0.6 };
+    private static double[] array2 = { 1.0000001, 1.0000002, 1.0000003, 1.0000004, 1.0000005 }; 
+    private static double[] array3 = { 1.0 / 3.0, 2.0 / 3.0, 4.0 / 3.0, 8.0 / 3.0,8.0 / 3.0 }; 
+    private static double[] array4 = { 1e16, 1.0, -1e16, 2.0, -2.0, 1e-16 };
+    private static double[] array5 = { Math.PI, Math.E, Math.sqrt(2), Math.sqrt(3), Math.sqrt(5), Math.log(2),
+            Math.log10(3) };
+
+    private static void sumValues(double[] arr, int arrayNumber) {
+        // Only make edits between the designated "Start" and "End" comments
+        printArrayInfo(arr, arrayNumber);
+
+        // Challenge 1: Sum all the values of the passed in array and assign to `total`
+        // Challenge 2: Have the sum be represented as a number with exactly 2 decimal places, assign to `modifiedTotal`
+        // Example: 0.1 would be shown as 0.10, 1 would be shown as 1.00, etc
+        // Step 1: sketch out plan using comments (include ucid and date)
+        // Step 2: Add/commit your outline of comments (required for full credit)
+        // Step 3: Add code to solve the problem (add/commit as needed)
+        double total = 0;
+        // Start Solution Edits
+        // Solve Challenge 1 here
+        
+      
+        // Solve Challenge 2 here
+        Object modifiedTotal = "?";
+
+        // End Solution Edits
+        System.out.println("Total Raw Value: " +total);
+        System.out.println("Total Modified Value: " + modifiedTotal);
+        System.out.println("");
+        System.out.println("______________________________________");
+    }
+
+    public static void main(String[] args) {
+        final String ucid = "mt85"; // <-- change to your UCID
+        // no edits below this line
+        printHeader(ucid, 2);
+        sumValues(array1, 1);
+        sumValues(array2, 2);
+        sumValues(array3, 3);
+        sumValues(array4, 4);
+        sumValues(array5, 5);
+        printFooter(ucid, 2);
+
+    }
+}
+
+package M2;
+
+public class Problem3 extends BaseClass {
+    private static Integer[] array1 = {42, -17, 89, -256, 1024, -4096, 50000, -123456};
+    private static Double[] array2 = {3.14159265358979, -2.718281828459, 1.61803398875, -0.5772156649, 0.0000001, -1000000.0};
+    private static Float[] array3 = {1.1f, -2.2f, 3.3f, -4.4f, 5.5f, -6.6f, 7.7f, -8.8f};
+    private static String[] array4 = {"123", "-456", "789.01", "-234.56", "0.00001", "-99999999"};
+    private static Object[] array5 = {-1, 1, 2.0f, -2.0d, "3", "-3.0"};
+    private static void bePositive(Object[] arr, int arrayNumber) {
+        // Only make edits between the designated "Start" and "End" comments
+        printArrayInfo(arr, arrayNumber);
+
+        // Challenge 1: Make each value positive
+        // Challenge 2: Convert the values back to their original data type and assign it to the proper slot of the `output` array
+        // Step 1: sketch out plan using comments (include ucid and date)
+        // Step 2: Add/commit your outline of comments (required for full credit)
+        // Step 3: Add code to solve the problem (add/commit as needed)
+        Object[] output = new Object[arr.length];
+        // Start Solution Edits
+        
+
+        // End Solution Edits
+        System.out.println("Output: ");
+        printOutputWithType(output);
+        System.out.println("");
+        System.out.println("______________________________________");
+    }
+
+    public static void main(String[] args) {
+        final String ucid = "mt85"; // <-- change to your UCID
+        // no edits below this line
+        printHeader(ucid, 3);
+        bePositive(array1, 1);
+        bePositive(array2, 2);
+        bePositive(array3, 3);
+        bePositive(array4, 4);
+        bePositive(array5, 5);
+        printFooter(ucid, 3);
+
+    }
+}
+
+package M2;
+
+public class Problem4 extends BaseClass {
+    private static String[] array1 = { "hello world!", "java programming", "special@#$%^&characters", "numbers 123 456",
+            "mIxEd CaSe InPut!" };
+    private static String[] array2 = { "hello world", "java programming", "this is a title case test",
+            "capitalize every word", "mixEd CASE input" };
+    private static String[] array3 = { "  hello   world  ", "java    programming  ",
+            "  extra    spaces  between   words   ",
+            "      leading and trailing spaces      ", "multiple      spaces" };
+    private static String[] array4 = { "hello world", "java programming", "short", "a", "even" };
+
+    private static void transformText(String[] arr, int arrayNumber) {
+        // Only make edits between the designated "Start" and "End" comments
+        printArrayInfoBasic(arr, arrayNumber);
+
+        // Challenge 1: Remove non-alphanumeric characters except spaces
+        // Challenge 2: Convert text to Title Case
+        // Challenge 3: Trim leading/trailing spaces and remove duplicate spaces
+        // Result 1-3: Assign final phrase to `placeholderForModifiedPhrase`
+        // Challenge 4 (extra credit): Extract middle 3 characters (beginning starts at middle of phrase),
+        // assign to 'placeholderForMiddleCharacters'
+        // if not enough characters assign "Not enough characters"
+ 
+        // Step 1: sketch out plan using comments (include ucid and date)
+        // Step 2: Add/commit your outline of comments (required for full credit)
+        // Step 3: Add code to solve the problem (add/commit as needed)
+        String placeholderForModifiedPhrase = "";
+        String placeholderForMiddleCharacters = "";
+        
+        for(int i = 0; i <arr.length; i++){
+            // Start Solution Edits
+            
+             // End Solution Edits
+            System.out.println(String.format("Index[%d] \"%s\" | Middle: \"%s\"",i, placeholderForModifiedPhrase, placeholderForMiddleCharacters));
+        }
+
+       
+
+        
+        System.out.println("\n______________________________________");
+    }
+
+    public static void main(String[] args) {
+        final String ucid = "mt85"; // <-- change to your UCID
+        // No edits below this line
+        printHeader(ucid, 4);
+
+        transformText(array1, 1);
+        transformText(array2, 2);
+        transformText(array3, 3);
+        transformText(array4, 4);
+        printFooter(ucid, 4);
+    }
+
+}
+package M2;
+
+public class Problem4 extends BaseClass {
+    private static String[] array1 = { "hello world!", "java programming", "special@#$%^&characters", "numbers 123 456",
+            "mIxEd CaSe InPut!" };
+    private static String[] array2 = { "hello world", "java programming", "this is a title case test",
+            "capitalize every word", "mixEd CASE input" };
+    private static String[] array3 = { "  hello   world  ", "java    programming  ",
+            "  extra    spaces  between   words   ",
+            "      leading and trailing spaces      ", "multiple      spaces" };
+    private static String[] array4 = { "hello world", "java programming", "short", "a", "even" };
+
+    private static void transformText(String[] arr, int arrayNumber) {
+        // Only make edits between the designated "Start" and "End" comments
+        printArrayInfoBasic(arr, arrayNumber);
+
+        // Challenge 1: Remove non-alphanumeric characters except spaces
+        // Challenge 2: Convert text to Title Case
+        // Challenge 3: Trim leading/trailing spaces and remove duplicate spaces
+        // Result 1-3: Assign final phrase to `placeholderForModifiedPhrase`
+        // Challenge 4 (extra credit): Extract middle 3 characters (beginning starts at middle of phrase),
+        // assign to 'placeholderForMiddleCharacters'
+        // if not enough characters assign "Not enough characters"
+ 
+        // Step 1: sketch out plan using comments (include ucid and date)
+        // Step 2: Add/commit your outline of comments (required for full credit)
+        // Step 3: Add code to solve the problem (add/commit as needed)
+        String placeholderForModifiedPhrase = "";
+        String placeholderForMiddleCharacters = "";
+        
+        for(int i = 0; i <arr.length; i++){
+            // Start Solution Edits
+            
+             // End Solution Edits
+            System.out.println(String.format("Index[%d] \"%s\" | Middle: \"%s\"",i, placeholderForModifiedPhrase, placeholderForMiddleCharacters));
+        }
+
+       
+
+        
+        System.out.println("\n______________________________________");
+    }
+
+    public static void main(String[] args) {
+        final String ucid = "mt85"; // <-- change to your UCID
+        // No edits below this line
+        printHeader(ucid, 4);
+
+        transformText(array1, 1);
+        transformText(array2, 2);
+        transformText(array3, 3);
+        transformText(array4, 4);
+        printFooter(ucid, 4);
+    }
+
+
+}
